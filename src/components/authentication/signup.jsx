@@ -37,7 +37,7 @@ function Signup(){
             if(name=="" || passwd=="")
             alert("Enter Valid Username and Password");
             else{
-                const response = await axios.post("http://localhost:5000/signup", {
+                const response = await axios.post("https://mentalhealth-api.onrender.com/signup", {
                     name: name,
                     password: passwd
                 }).catch((e)=>{

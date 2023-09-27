@@ -44,7 +44,7 @@ function Uploading(){
                     alert("Fill all the fields !")
                 }else{
 
-                    let response=await axios.post("http://localhost:5000/createblog",{
+                    let response=await axios.post("https://mentalhealth-api.onrender.com/createblog",{
                         rating:rating,
                         title:title,
                         preview:preview,

@@ -39,7 +39,7 @@ function Rating(){
             <div style={{display:"flex",justifyContent:"center"}}>
                 <Button variant="outline-warning" style={{marginTop:30}} 
                 onClick={async()=>{
-                    const response=await axios.post("http://localhost:5000/updatemood",{
+                    const response=await axios.post("https://mentalhealth-api.onrender.com/updatemood",{
                         rating:rate,
                         name:localStorage.getItem("user")
                     },{

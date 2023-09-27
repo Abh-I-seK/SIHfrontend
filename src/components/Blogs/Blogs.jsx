@@ -9,7 +9,7 @@ function Blogs(){
     const navigate = useNavigate();
 
     function hmm2(){
-        fetch("http://localhost:5000/blogsall", {
+        fetch("https://mentalhealth-api.onrender.com/blogsall", {
             method: "GET",
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("token")

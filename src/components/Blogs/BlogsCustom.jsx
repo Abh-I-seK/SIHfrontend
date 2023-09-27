@@ -13,7 +13,7 @@ function BlogsCustom(){
         function callback1(res) {
             res.json().then(callback2)
         }
-        fetch("http://localhost:5000/blogs", {
+        fetch("https://mentalhealth-api.onrender.com/blogs", {
             method: "GET",
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("token"),
@@ -25,7 +25,7 @@ function BlogsCustom(){
     useEffect(()=>hmm2(), []);
     
     useEffect(()=>{
-        fetch("http://localhost:5000/getmood", {
+        fetch("https://mentalhealth-api.onrender.com/getmood", {
             method: "GET",
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("token"),

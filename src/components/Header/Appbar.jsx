@@ -25,7 +25,7 @@ function Appbar(){
         function callback1(res) {
             res.json().then(callback2)
         }
-        fetch("http://localhost:5000/me", {
+        fetch("https://mentalhealth-api.onrender.com/me", {
             method: "GET",
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("token")
