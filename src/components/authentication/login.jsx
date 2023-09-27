@@ -34,7 +34,7 @@ function Login(){
         <br/>
         <center>
         <Button variant="contained" style={{padding:10,marginTop:13,marginBottom:12}} onClick={async ()=>{
-            const response = await axios.post("http://localhost:5000/login", {
+            const response = await axios.post("https://mentalhealth-api.onrender.com/login", {
                 name: name,
                 password: passwd
             }).catch((e)=>{
